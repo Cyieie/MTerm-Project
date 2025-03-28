@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(to bottom, #f7f9e9, #d4e3b5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 180vh;
+}
+
+.nav {
+    background-color: #b7d7a8;
+    width: 170px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    text-align: left;
+    border: #333333;    
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #1E483E;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.nav a:focus {
+    background-color: #88cebd;
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-left: 200px;
+}
+
+.box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e4f1d5, #d3e8b5);
+    border: 1px solid #a2ca7e;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+
+.box h1 {
+    color: #000000;
+    font-size: 22px;
+}
+
+.box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.video-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    color: #000000;
+    font-size: 22px;
+}

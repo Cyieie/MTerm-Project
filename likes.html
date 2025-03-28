@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/888c5fc8dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dc2.css">
+    <title>World's Greatest Singer</title>
+    <style>
+       body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #3b3e43;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #3F51B5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            margin: 5px;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover, .buttons a:focus {
+            background-color: #303F9F;
+            color: black;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+            width: 50%;
+            margin: 20px auto;
+            background-color: #f9f9dc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #beat:target, #indie:target, #rnb:target, #hh:target {
+            display: block;
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+
+        .section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav {
+        margin-top: 20px; 
+        display: flex; 
+        justify-content: center;
+        gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #3F51B5; 
+            color: white;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #303F9F;
+            color: black;
+        }
+        main {
+        margin-left: 250px; 
+        padding: 20px;
+        width: 80%; 
+        }
+
+        .section {
+            display: none;
+            padding: 30px;
+            width: 68%;
+            margin: 20px auto;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 70%; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        .section div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .section div img {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .section div img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0px 0px 15px #2e62bb86;
+        }
+        h1 {
+            font-size: 2em; 
+            color: black; 
+        }
+        .container2-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .container2 {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container2 img {
+            width: 120px;  
+            height: 120px; 
+            object-fit: contain; 
+            border-radius: 10px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <aside class="nav">
+        <h1 style="text-align: center;
+            font-weight: none;
+            color: #000000;
+            font-size: large;
+            padding: 1px;">CMS</h1>
+            <a href="biography.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Biography</i></a>
+            <a href="skills.html"><i class="fa-solid fa-glasses"></i>&nbsp;&nbsp;Skills</a>
+            <a href="resume.html"><i class="fa-solid fa-paperclip"></i>&nbsp;&nbsp;Resume</a>
+            <a href="PicDump.html"><i class="fa-solid fa-images"></i>&nbsp;&nbsp;Picture Dump</a>
+            <a href="likes.html".html"><i class="fa-solid fa-heart"></i>&nbsp;&nbsp;My beat</a>
+            <a href="extra1.html".html"><i class="fa-solid fa-video"></i></i>&nbsp;&nbsp;fav movie</a>
+            <a href="extra2.html".html"><i class="fa-solid fa-film"></i></i>&nbsp;&nbsp;fav show</a>
+            <a href="dream.html".html"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Places</a>
+            <a href="bucket.html".html"><i class="fa-solid fa-table-list"></i>&nbsp;&nbsp;Bucket List</a>
+            <a href="mailto:songodanancy@gmail.com"><i class="fa-solid fa-envelope"></i></i>&nbsp;&nbsp;Connect With Me</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1><strong>My Favorites    </strong></h1>
+            <div class="buttons">
+                <a href="#beat">My Beat</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </div>
+        </div>
+        
+
+        <div id="beat" class="section">
+            
+            <div class="buttons">
+                <a href="#indie">Indie Genre</a>
+                <a href="#rnb">RnB Genre</a>
+                <a href="#hh">Hip-Hop Genre</a>
+                <a href="#"><i class="fa-regular fa-circle-xmark"></i>&nbsp; Close</a>
+            </div>
+        </div>
+        <!--INDIE-->
+        <div id="indie" class="section">
+                <div class="audioContainer">
+                    <div class="container2-wrapper">
+                        <div class="container2">
+                            <h3>Sana Bumalik</h3>
+                                <a href="Images/sud.jpg" target="display">
+                                    <img src="Images\sud.jpg" alt="Sana Bumalik by SUD." 
+                                    title="Sana Bumalik by SUD."/>
+                                    <br>
+                                    <br>
+                                </a>
+                                <p>
+                                    "Sana Bumalik" by SUD is a heartfelt song about longing for a lost love to return. With its soulful melodies and poignant lyrics, the song captures the pain of separation and the deep yearning to relive past moments. The melancholic yet soothing instrumentals complement the emotional weight of the lyrics, making it a relatable anthem for those who have experienced heartbreak.
+                                </p>
+                                <a>
+                                    <audio controls>
+                                        <source src="audio/sana bumalik.mp3" type="audio/mp3">
+                                    </audio>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Waltz of four left feet</h3>
+                            <a href="Images/indie.jpg" target="display">
+                                <img src="Images\indie.jpg" alt="Waltz of four left feet by Shirebound&Busking." 
+                                title="  Waltz of four left feet by Shirebound&Busking."/>
+                            </a>
+                            <p>
+                                ​"Waltz of Four Left Feet" is a poignant track by the indie folk duo Shirebound and Busking, featured on their album "For Princesses, By Thieves (O Mga Awit Ng Hiraya Para Sa Guni-guning Sinta)" released in 2021. The song captures the essence of unrequited love and the bittersweet nature of longing. It portrays a complex emotional landscape where the narrator finds joy in simply observing their beloved from afar, accepting their own clumsiness in the dance of romance.
+                            </p>
+                            <a>
+                                <audio controls >
+                                    <source src="audio/waltz.mp3" type="audio/mp3">
+                                </audio>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Pahintulot</h3>
+                        <a href="Images/pahin.jpg" target="display">
+                            <img src="Images\pahin.jpg" alt="Pahintulot by Shirebound&Busking." 
+                            title="Pahintulot by Shirebound&Busking."/>
+                        </a>
+                        <p>
+                            "Pahintulot" by Shirebound & Busking is a heartfelt song about seeking permission to love and be loved. It captures the longing, vulnerability, and hope of expressing deep emotions, especially in the face of distance and uncertainty
+                        </p>
+                        <a>
+                            <audio controls >
+                                <source src="audio/pahintulot.mp3" type="audio/mp3">
+                            </audio>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="#beat"><i class="fa-solid fa-arrow-left"></i>&nbsp; Back</a>
+            </nav>
+        </div>
+
+        <!--RNB-->
+        <div id="rnb" class="section">      
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Rainbow</h3>
+                        <a href="Images/sb.jpg" target="display">
+                            <img src="Images\sb.jpg" alt="Rainbow by South Border."
+                            title="Rainbow by South Border."/> 
+                        </a>
+                        <p>
+                            "Rainbow" by South Border is a heartfelt song about hope and resilience. It conveys the message that after hardships and struggles, brighter days will come just like a rainbow after the rain. With its soothing melody and uplifting lyrics, the song has become an anthem of encouragement and positivity.
+                        </p>
+                        <a>
+                            <audio controls >
+                                <source src="audio/rainbow.mp3" type="audio/mp3">
+                            </audio>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Take all the love</h3>
+                            <a href="Images/art.jpg" target="display">
+                                <img src="Images\art.jpg" alt="Take all the love by Arthur Nery."
+                                title="Take all the love by Arthur Nery."/>
+                            </a>
+                            <p>
+                                "Take All the Love" by Arthur Nery is a soulful R&B track about unrequited love and emotional vulnerability. The song expresses deep longing and the willingness to love someone despite uncertainty, wrapped in smooth vocals and mellow instrumentation.
+                            </p>
+                            <a>
+                                <audio controls>
+                                    <source src="audio/take.mp3" type="audio/mp3">
+                                </audio>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Pagsamo</h3>
+                        <a href="Images/samo.jpg" target="display">
+                            <img src="Images\samo.jpg" alt="Pagsamo by Arthur Nery.">
+                            <title="Pagsamo by Arthur Nery."/>         
+                        </a>
+                        <p>
+                            "Pagsamo" by Arthur Nery is a heartfelt song about longing and unreciprocated love. With its soulful melody and emotional lyrics, it conveys the pain of wanting to be with someone who may not feel the same. The song's smooth R&B style and melancholic tone make it a relatable anthem for those experiencing heartbreak.
+                        </p>
+                        <a>
+                            <audio controls >
+                                <source src="audio/pagsamo.mp3" type="audio/mp3">
+                            </audio>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="#beat"><i class="fa-solid fa-arrow-left"></i>&nbsp; Back</a>
+                          
+            </nav>
+        </div>
+
+        <!--HIPHOP-->
+        <div id="hh" class="section">
+            
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Eba</h3>
+                        <a href="Images/eba.jpg" target="display">
+                            <img src="Images\eba.jpg" alt="Eba by Kiyo."
+                            title="Eba by Kiyo."/>
+                        </a>
+                        <p>
+                            "Eba" by Kiyo is a mellow and introspective track that reflects on love, longing, and personal struggles. Blending lo-fi beats with smooth rap verses, the song captures the emotions of reminiscing about a past relationship while navigating life's challenges. Its laid-back vibe and heartfelt lyrics make it a relatable anthem for those dealing with love and loss
+                        </p>
+                        <a>
+                            <audio controls>
+                                <source src="audio/eba.mp3" type="audio/mp3">
+                            </audio>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="audioContainer">
+                <div class="container2-wrapper">
+                    <div class="container2">
+                        <h3 align="left">Rapstar</h3>
+                        <a href="Images/rap.jpg" target="display">
+                            <img src="Images\rap.jpg" alt="Rapstar by Flow G."
+                            title="Rapstar BY Flow G."/>
+                        </a>
+                        <p>
+                            "Rapstar" by Flow G is a hard-hitting track that showcases his journey, struggles, and success in the rap industry. With intense beats and sharp lyricism, the song highlights his determination, work ethic, and the challenges he overcame to achieve fame. It’s a powerful anthem of ambition and perseverance in the rap game.
+                        </p>
+                        <a>
+                            <audio controls >
+                                <source src="audio/rapstar.mp3" type="audio/mp3">
+                            </audio>
+                        </a>
+                    </div>
+            
+                    <div class="audioContainer">
+                        <div class="container2-wrapper">
+                            <div class="container2">
+                                <h3 align="left">Gusto</h3>
+                                    <a href="Images/gusto.jpg" target="display">
+                                        <img src="Images\gusto.jpg" alt="Gusto by Zack Tabudlo."
+                                        title="Eba by Zack Tabudlo."/>
+                                    </a>
+                                    <p>
+                                        "Gusto" by Zack Tabudlo and Al James is a smooth, groovy track about admiration and the struggle to confess feelings. Blending R&B and funk influences, the song captures the excitement and nervousness of wanting to be with someone but hesitating to make a move.
+                                    </p>
+                                    <a>
+                                        <audio controls>
+                                            <source src="audio/gusto.mp3" type="audio/mp3">
+                                        </audio>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="#beat"><i class="fa-solid fa-arrow-left"></i>&nbsp; Back</a>
+            </nav>
+        </div>
+    </main>
+</body>
+</html>

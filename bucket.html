@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/888c5fc8dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dc2.css">
+    <title>World's Greatest Singer</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #3b3e43;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+        #pic:target {
+            display: block;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #3F51B5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            margin: 5px;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover, .buttons a:focus {
+            background-color: #303F9F;;
+            color: black;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+            width: 50%;
+            margin: 20px auto;
+            background-color: #f9f9dc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+
+        .section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav {
+        margin-top: 20px; 
+        display: flex; 
+        justify-content: center;
+        gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #3F51B5; 
+            color: white;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #303F9F;
+            color: black;
+        }
+        main {
+        margin-left: 250px; 
+        padding: 20px;
+        width: 80%; 
+        }
+
+        .section {
+            display: none;
+            padding: 30px;
+            width: 68%;
+            margin: 20px auto;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 70%; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        .section div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .section div img {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .section div img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0px 0px 15px #2e62bb86;
+        }
+        h1 {
+            font-size: 2em; 
+            color: black; 
+        }
+        .container2-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .container2 {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container2 img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .image-grid a {
+            display: block;
+            text-align: center;
+        }
+
+        .image-grid img {
+            width: 100%; 
+            height: 200px;
+            object-fit: cover;
+            opacity: 1;
+            filter: brightness(30%);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            opacity: 100%;
+            box-shadow: 0px 0px 10px #2e62bb86;
+            filter: brightness(100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <aside class="nav">
+        <h1 style="text-align: center;
+            font-weight: none;
+            color: #000000;
+            font-size: large;
+            padding: 1px;">CMS</h1>
+            <a href="biography.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Biography</i></a>
+            <a href="skills.html"><i class="fa-solid fa-glasses"></i>&nbsp;&nbsp;Skills</a>
+            <a href="resume.html"><i class="fa-solid fa-paperclip"></i>&nbsp;&nbsp;Resume</a>
+            <a href="PicDump.html"><i class="fa-solid fa-images"></i>&nbsp;&nbsp;Picture Dump</a>
+            <a href="likes.html".html"><i class="fa-solid fa-heart"></i>&nbsp;&nbsp;My beat</a>
+            <a href="extra1.html".html"><i class="fa-solid fa-video"></i></i>&nbsp;&nbsp;fav movie</a>
+            <a href="extra2.html".html"><i class="fa-solid fa-film"></i></i>&nbsp;&nbsp;fav show</a>
+            <a href="dream.html".html"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Places</a>
+            <a href="bucket.html".html"><i class="fa-solid fa-table-list"></i>&nbsp;&nbsp;Bucket List</a>
+            <a href="mailto:songodanancy@gmail.com"><i class="fa-solid fa-envelope"></i></i>&nbsp;&nbsp;Connect With Me</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <div id="pic" class="container">
+            <div class="image-grid">
+                <a href="Images/gig.jpg" target="display">
+                    <img src="Images/gig.jpg" title="Playing a gig at big places">
+                </a>
+                <a href="Images/drink.jpg" target="display">
+                    <img src="Images/drink.jpg" title="Drink as much as I can">
+                </a>
+                <a href="Images/stable.jpg" target="display">
+                    <img src="Images/stable.jpg" title="Having a stable job">
+                </a>
+                <a href="Images/marry.jpg" target="display">
+                    <img src="Images/marry.jpg" title="Marrying the person I love">
+                </a>
+                <a href="Images/car.jpg" target="display">
+                    <img src="Images/car.jpg" title="Buying things with my own money">
+                </a>
+                <a href="Images/sun.jpg" target="display">
+                    <img src="Images/sun.jpg" title="Watch the sunset and sunrise with my girl">
+                </a>
+                <a href="Images/solo.jpg" target="display">
+                    <img src="Images/solo.jpg" title="Go on a solo trip">
+                </a>
+                <a href="Images/watch.jpg" target="display">
+                    <img src="Images/watch.jpg" title="See my favorite band and artist live in concert">
+                </a>
+                <a href="Images/web.jpg" target="display">
+                    <img src="Images/web.jpg" title="Make a website">
+                </a>
+                <a href="Images/coll.jpg" target="display">
+                    <img src="Images/coll.jpg" title="Finish College">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1>Bucket List</h1>
+            <p>
+                <ul style="list-style-type: circle; font-size: 18px; text-align: left;">
+                <i><b><li> Playing a gig at big places</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        It would be exciting to perform in front of a big audience. It would be unforgettable to feel the crowd's energy and hear their cheers. I'd like to perform on a large stage someday.
+                    </p>
+                <i><b><li> Drink as much as I can</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        There are moments when I just want to relax and enjoy life without any concerns.  It sounds like a lot of fun to share tales, have beverages, and make memories with friends.  I'll make sure to drink sensibly.
+                    </p>
+                <i><b><li> Having a stable job</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        Peace of mind and financial stability are connected with a steady work.  I could follow my dreams without having to worry about money all the time.  Along with enjoying life, I want to know that I have a reliable source of income.
+                    </p>
+                <i><b><li> Marrying the person I love</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        One of my greatest goals is to meet the perfect person and start a future with them.  Marriage is about more than simply love; it's also about commitment and spending your golden years with someone you love.  Together with my partner, I hope to build a lovely life that is full of joy and love.
+                    </p>
+                <i><b><li> Buying things with my own money</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        It gives me a great sense of fulfillment to buy stuff with money I earned.  I feel more independent and accountable because of it.  I want to buy the items I really desire as a reward for all of my hard work.
+                    </p>
+                <i><b><li> Watch the sunset and sunrise with my girl</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        It is calming to watch the sky change hues as the sun rises and sets.  To make it even more memorable, I would do this with my partner.  It's a romantic yet easy approach to spend time with each other.
+                    </p>
+                <i><b><li> Go on a solo trip</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        It has always been my dream to travel alone. I can go at my own speed and find new locations without any limitations. It would be a chance for me to discover new things and learn more about myself.
+                    </p>
+                <i><b><li> See my favorite band and artist live in concert</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        A live performance by my favorite band or artist has an unmatched energy. It would be a once-in-a-lifetime experience to sing with the audience and feel the music. At a concert, I want to be able to savor every second.
+                    </p>
+                <i><b><li> Make a website</li></b></i>
+                <p style="align-items: center;
+                    font-size: 16px; text-align: left; margin-top: 5px;">
+                        I have always wanted to create a website. I want to share my thoughts and ideas with the world. I want to make a website that reflects my personality and interests. I want to learn how to code and design a website from scratch. I want to make a website that is unique and creative.
+                    </p>
+                <i><b><li> Finish College</li></b></i>
+                <p style="align-items: center;
+                        font-size: 16px; text-align: left; margin-top: 5px;">
+                        A significant life milestone is earning a college degree. It stands for years of diligence, commitment, and tenacity. I would feel more accomplished and have access to greater professional prospects if I obtained a degree.    
+                    </p>
+                </ul> 
+            </p>
+            <nav>
+                <a href="#pic"><i class="fa-solid fa-arrow-up"></i>&nbsp; TOP</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </nav>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/888c5fc8dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dc2.css">
+    <title>World's Greatest Singer</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #3b3e43;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #3F51B5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            margin: 5px;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover, .buttons a:focus {
+            background-color: #303F9F;
+            color: black;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+            width: 50%;
+            margin: 20px auto;
+            background-color: #f9f9dc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #skills:target, #hobbies:target, #interest:target {
+            display: block;
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+
+        .section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav {
+        margin-top: 20px; 
+        display: flex; 
+        justify-content: center;
+        gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #3F51B5; 
+            color: white;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #303F9F;
+            color: black;
+        }
+        main {
+        margin-left: 250px; 
+        padding: 20px;
+        width: 80%; 
+        }
+
+        .section {
+            display: none;
+            padding: 30px;
+            width: 68%;
+            margin: 20px auto;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 70%; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        .section div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .section div img {
+            width: 150px; 
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .section div img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0px 0px 15px #2e62bb86;
+        }
+        h1 {
+            font-size: 2em; 
+            color: black; 
+            margin-bottom: 20px;
+        }
+        .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 80%;
+        margin: 0 auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <aside class="nav">
+        <h1 style="text-align: center;
+            font-weight: none;
+            color: #000000;
+            font-size: large;
+            padding: 1px;">CMS</h1>
+            <a href="biography.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Biography</i></a>
+            <a href="skills.html"><i class="fa-solid fa-glasses"></i>&nbsp;&nbsp;Skills</a>
+            <a href="resume.html"><i class="fa-solid fa-paperclip"></i>&nbsp;&nbsp;Resume</a>
+            <a href="PicDump.html"><i class="fa-solid fa-images"></i>&nbsp;&nbsp;Picture Dump</a>
+            <a href="likes.html".html"><i class="fa-solid fa-heart"></i>&nbsp;&nbsp;My beat</a>
+            <a href="extra1.html".html"><i class="fa-solid fa-video"></i></i>&nbsp;&nbsp;fav movie</a>
+            <a href="extra2.html".html"><i class="fa-solid fa-film"></i></i>&nbsp;&nbsp;fav show</a>
+            <a href="dream.html".html"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Places</a>
+            <a href="bucket.html".html"><i class="fa-solid fa-table-list"></i>&nbsp;&nbsp;Bucket List</a>
+            <a href="mailto:songodanancy@gmail.com"><i class="fa-solid fa-envelope"></i></i>&nbsp;&nbsp;Connect With Me</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1>Skills, Hobbies and Interest    </h1>
+            <div class="buttons">
+                <a href="#skills">Skills</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#interest">Interest</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </div>
+        </div>
+        <div id="skills" class="section">
+            <div align="center">
+                <a href="Images/time.jpg" target="display">
+                    <img src="Images\time.jpg" alt="Time Management Skill."
+                    title="Time Management Skill."/>
+                </a> 
+                <a href="Images/prob.jpg" target="display">
+                    <img src="Images\prob.jpg" alt="Problem Solving Skill."
+                    title="Problem Solving Skill."/>
+                </a> 
+                <a href="Images/team.jpg" target="display">
+                    <img src="Images\team.jpg" alt="Team Work."
+                    title="Team Work."/>
+                </a>
+                <a href="Images/comm.jpg" target="display">
+                    <img src="Images\comm.jpg" alt="Communication Skill."
+                    title="Communication Skill."/>
+                </a> 
+            </div>
+                <h2>Skills</h2>
+                <p>Isa sa mga soft skills na meron ako ay time management. Dahil dito, nagagawa ko pa rin lahat ng mga dapat kong gawin at nagiging maayos ang resulta nito. Halimbawa, hinahati ko nang maayos ang oras ko para sa pag-aaral, paglalaro ng basketball, at pagbibigay ng oras para sa bonding kasama ang pamilya ko. Hindi ako nagrarush sa mga gawain dahil alam ko kung paano maglaan ng oras nang tama. Ginagawa ko munang priority ang mga importanteng tasks bago ako mag-relax o maglaro.
+                Bukod dito, mayroon din akong mahusay na communication skills. Nasanay akong magbigay ng respeto sa kausap ko, nakikinig muna ako bago magsalita para maiwasan ang misunderstanding. Confident din ako kapag may group discussions o presentations, at madali akong nakakapagpahayag ng aking mga ideya. Isa pang mahalagang soft skill na meron ako ay teamwork. Madali akong makisama sa iba at marunong akong makipagtulungan sa mga group activities. Mahalaga rin sa akin ang problem-solving skills; kapag may challenges, hindi ako agad sumusuko at iniisip ko muna ang best na solusyon bago kumilos.</p>
+                <nav>
+                    <a href="#"><i class="fa-regular fa-circle-xmark"></i>&nbsp; Close</a>
+                </nav>
+            </div>
+
+            <div id="hobbies" class="section">
+                <div align="center">
+                    <a href="Images/teenage3.jpg" target="display">
+                        <img src="Images\teenage3.jpg" alt="Traveling with my bicycle."
+                        title="Traveling with my bicycle."/>
+                    </a> 
+                    <a href="Images/college2.jpg" target="display">
+                        <img src="Images\college2.jpg" alt="Taking photos."
+                        title="Taking photos."/>
+                    </a>
+                    <a href="Images/college.jpg" target="display">
+                        <img src="Images\college.jpg" alt="Playing Guitar." 
+                        title="Playing Guitar."/>
+                    </a> 
+                    <a href="Images/vball.jpg" target="display">
+                        <img src="Images\vball.jpg" alt="Player of CCSS Volleyball Last Year." 
+                        title="Player of CCSS Volleyball Last Year."/>
+                    </a> 
+                </div>
+                <h2>Hobbies</h2>
+                <p>Isa sa mga hobbies ko ay paglalaro ng basketball. Gustong-gusto ko ito dahil nakakatulong ito sa pagpapalakas ng katawan ko at sa pagiging competitive ko. Tuwing may free time ako, naglalaro ako kasama ang mga kaibigan ko para ma-improve ang laro ko. Bukod sa basketball, mahilig din akong maglaro ng volleyball. Nakakatuwa kapag nakakagawa ako ng magandang spike o nakaka-block ako ng tira ng kalaban. Mahilig din akong tumutugtog ng gitara. Natutunan ko ito dahil sa interest ko sa musika at gusto kong matutunan ang mga paborito kong kanta. Minsan, kumakanta rin ako habang nag-gigitara, at nagrereklax ako kapag tumutugtog, lalo na kapag gusto kong mag-unwind. Isa rin sa hobbies ko ang photography; gusto kong kumuha ng pictures ng magagandang tanawin, pagkain, at moments kasama ang pamilya o barkada. Pakiramdam ko, bawat litrato ay may kwento kaya gusto kong hulihin ang perfect shot. Mahilig din ako sa biking, ginagamit ko ito bilang exercise at pampawala ng stress. Masarap sa pakiramdam kapag nasa kalsada ako, nararamdaman ang hangin, at nakikita ang magagandang tanawin. Minsan, sumasama rin ako sa mga kaibigan ko para mag-bike sa malalayong lugar. Siyempre, hindi mawawala ang online games sa listahan ng hobbies ko. Mahilig akong maglaro ng iba’t ibang games para mag-relax at ma-challenge ang sarili ko. Isa rin itong paraan para makipag-bonding sa mga kaibigan kahit nasa bahay lang.</p>
+                <nav>
+                    <a href="#"><i class="fa-regular fa-circle-xmark"></i>&nbsp; Close</a>
+                </nav>
+            </div>
+
+            <div id="interest" class="section">
+                    <div align="center">
+                        <a href="Images/college2.jpg" target="display">
+                            <img src="Images\college2.jpg" alt="Im interested in Photography."
+                            title="Im interested in Photography."/>
+                        </a> 
+                        <a href="Images/indie.jpg" target="display">
+                            <img src="Images\indie.jpg" alt="Indie Songs is one of my favorite Genre."
+                            title="Indie Songs is one of my favorite Genre."/>
+                        </a> 
+                        <a href="Images/taek.jpg" target="display">
+                            <img src="Images\taek.jpg" alt="Im interested Taekwondo."
+                            title="Im interested Taekwondo."/>
+                        </a> 
+                        <a href="Images/japan3.jpg" target="display">
+                            <img src="Images/japan3.jpg" alt="Place I love to visit" title="Place I love to visit."/>
+                        </a>
+                    </div>    
+                <h2>Interest</h2>
+                <p>
+                    Isa sa mga interests ko ay music. Mahilig akong makinig ng OPM at indie songs, pero gusto ko    pang ma-explore ang iba’t ibang genre. Gusto kong subukan makinig ng jazz, classical, at rock para mas lumawak ang taste ko sa music. Nakaka-relax sa akin ang acoustic at lo-fi music, lalo na kapag nag-aaral ako. Minsan, sinusubukan ko ring tumugtog ng gitara at mag-aral ng bagong chords. Gusto ko ring matutunan kung paano gumawa ng sariling kanta o melody.
+                    sa music, interesado rin ako sa travel. Isa sa mga pangarap ko ay makapag-travel sa ibang bansa para ma-experience ang iba’t ibang kultura. Gusto kong makapunta sa Japan dahil mahilig ako sa anime, Japanese food, at historical places nila. Interesado rin akong pumunta sa Korea para makita ang K-pop culture, palaces, at street markets. Bukod sa pagkain, gusto kong makita ang cherry blossoms sa Japan at maranasan ang winter sa Korea.
+                    Mahilig din ako sa sports, at bukod sa paglalaro ng basketball, volleyball, at badminton, gusto ko pang matry ang iba pang physical activities tulad ng taekwondo at judo. Naniniwala akong malaking tulong ito para ma-improve ang katawan ko at maging mas malakas at flexible. Mahilig akong gumalaw at hindi ko gusto ang palaging nakaupo lang, kaya gusto kong magkaroon ng active lifestyle. Interesado rin ako sa photography; gustong-gusto kong matutunan pa ang tamang techniques sa pagkuha ng magagandang larawan. Para sa akin, ang bawat litrato ay may kwento, kaya gusto kong hulihin ang best moments at sceneries gamit ang camera.
+                    </p>
+                    <nav>
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i>&nbsp; Close</a>
+                    </nav>
+            </div>
+    </main>
+</body>
+</html>

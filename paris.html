@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/888c5fc8dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dc.css">
+    <title>World's Greatest Singer</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #3b3e43;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #3F51B5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            margin: 5px;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover, .buttons a:focus {
+            background-color: #303F9F;;
+            color: black;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+            width: 50%;
+            margin: 20px auto;
+            background-color: #f9f9dc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #paris:target {
+            display: block;
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+
+        .section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav {
+        margin-top: 20px; 
+        display: flex; 
+        justify-content: center;
+        gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #3F51B5; 
+            color: white;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #303F9F;
+            color: black;
+        }
+        main {
+        margin-left: 250px; 
+        padding: 20px;
+        width: 80%; 
+        }
+
+        .section {
+            display: none;
+            padding: 30px;
+            width: 68%;
+            margin: 20px auto;
+            background-color: #b7d7a8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 70%; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        .section div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .section div img {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .section div img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0px 0px 15px #2e62bb86;
+        }
+        h1 {
+            font-size: 2em; 
+            color: black; 
+        }
+        .container2-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .container2 {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container2 img {
+            width: 120px;  
+            height: 120px; 
+            object-fit: contain; 
+            border-radius: 10px; 
+        }
+        .image-grid {
+            display: flex;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .image-grid a {
+            display: block;
+            text-align: center;
+        }
+
+        .image-grid img {
+            width: 100%; 
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px #2e62bb86;
+        }
+        .image-grid2 {
+            display: flex;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .image-grid2 a {
+            display: block;
+            text-align: center;
+        }
+
+        .image-grid2 img {
+            width: 100%; 
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid2 img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px #2e62bb86;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <aside class="nav">
+        <h1 style="text-align: center;
+        font-weight: none;
+        color: #000000;
+        font-size: large;
+        padding: 1px;">CMS</h1>
+        <a href="biography.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Biography</i></a>
+        <a href="skills.html"><i class="fa-solid fa-glasses"></i>&nbsp;&nbsp;Skills</a>
+        <a href="resume.html"><i class="fa-solid fa-paperclip"></i>&nbsp;&nbsp;Resume</a>
+        <a href="PicDump.html"><i class="fa-solid fa-images"></i>&nbsp;&nbsp;Picture Dump</a>
+        <a href="likes.html".html"><i class="fa-solid fa-heart"></i>&nbsp;&nbsp;My beat</a>
+        <a href="extra1.html".html"><i class="fa-solid fa-video"></i></i>&nbsp;&nbsp;fav movie</a>
+        <a href="extra2.html".html"><i class="fa-solid fa-film"></i></i>&nbsp;&nbsp;fav show</a>
+        <a href="dream.html".html"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Places</a>
+        <a href="bucket.html".html"><i class="fa-solid fa-table-list"></i>&nbsp;&nbsp;Bucket List</a>
+        <a href="mailto:songodanancy@gmail.com"><i class="fa-solid fa-envelope"></i></i>&nbsp;&nbsp;Connect With Me</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1>Eiffel Tower in Paris</h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="image-grid2">
+                <a href="Images/paris.jpg" target="display">
+                    <img src="Images/paris.jpg" alt="The Eiffel Tower" title="The Eiffel Tower"></a>
+            </div>
+            <p>
+                The reason I want to visit the Eiffel Tower is that I want to propose to someone I love there. I think it would be even more romantic to see my one and only say yes to my proposal in such a beautiful place. Also they say it’s the best spot in Paris for a proposal.
+                <br>
+                <br>
+                <b><i>How to get there?:</i></b><br>
+                • Starting from your place in paris take the MRT<br>
+                • Starting from your place in paris take the bus or some taxi.
+            </p>
+            <hr width="100%" size="1" color="black">
+            <div class="image-grid">
+                    <a href="Images/mus.jpg" target="display">
+                        <img src="Images/mus.jpg" alt="Louvre Museum Ticket & Optional Seine River Cruise" title="Louvre Museum Ticket & Optional Seine River Cruise"></a>
+                    <a href="Images/lwky.jpg" target="display">
+                        <img src="Images/lwky.jpg" alt="Disneyland Paris" title="Disneyland Paris"></a>
+                    <a href="Images/fods.jpg" target="display">
+                        <img src="Images/fods.jpg" alt="Paris Walking Food Tour with Secret Food Tours" title="Paris Walking Food Tour with Secret Food Tours"></a>
+            </div>
+                
+            <p>   
+                <b><i>Other places to visit in Paris</i></b><br>
+                • <strong>Louvre Museum Ticket</strong>- A Louvre Museum ticket grants access to one of the world’s most renowned museums, home to masterpieces like the Mona Lisa and Venus de Milo. It allows visitors to explore over 35,000 artworks, including exclusive temporary exhibitions. Beyond the art, the ticket provides an opportunity to experience the museum’s rich history and stunning architecture.
+                <br>
+                • <strong>Disneyland Paris</strong> - Disneyland Paris is special for its unique blend of classic Disney magic and European charm, featuring iconic attractions, enchanting castles, and exclusive experiences like Ratatouille: The Adventure. As the only Disney park in Europe, it offers a magical escape with breathtaking parades, themed lands, and a fairytale atmosphere unlike any other.
+                <br>
+                • <strong>Paris walking Food Tour</strong> - A Paris Walking Food Tour is special because it lets you explore the city’s rich culinary scene while strolling through charming streets, tasting authentic French pastries, cheeses, wines, and gourmet delights. It offers a unique blend of culture and gastronomy, allowing you to experience Paris like a local through its world-famous food.
+                <br>
+            </p>
+            <div class="buttons">
+                <a href="dream.html"><i class="fa-solid fa-arrow-left"></i>&nbsp; 
+            </div>
+        </div> 
+    </main>
+</body>
+</html>
